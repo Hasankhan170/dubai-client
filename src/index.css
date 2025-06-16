@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+/* 
+.footer{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0;
+} */
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+.booking-form{
+  width: auto;
+    height: auto;
+    margin: 0% auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 30px;
+  padding: 12px;
+    
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+   color: #111111e8;
+}
+
+.opt{
+   display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  gap: 60px;
+  margin-left: 10em;
+}
+
+.chld{
+   display: flex;
+  align-items: center;
+ 
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+
+
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    font-size: 20px;
+    
+  }
+  
+  .faq-answer.open {
+    max-height: 1000px; /* large enough to fit long answers */
+    opacity: 1;
+  }
+  
+  .city h2{
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .city span{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .price h2{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .show-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+   
+  }
+
+  
+  button{
+    cursor: pointer;
+  }
+
+  
+
+  .detail-box{
+    width: 90%;
+    height: auto;
+    margin: 0% auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  
+  
+  
+  .duration,
+  .ava,
+  .adult,
+  .child,
+  .pick-up,
+  .pick-drop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 3%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111e8;
+   
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* background-color: #fff; */
+}
+
+/* Left text */
+.duration h2,
+.ava h2,
+.adult h2,
+.child h2,
+.pick-up h2,
+.pick-drop h2 {
+  text-align: left;
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Right text */
+.duration h3,
+.ava h3,
+.adult h3,
+.child h3,
+.pick-up h3,
+.pick-drop h3 {
+  text-align: left;
+  flex: 1;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Divider line in center */
+.duration h3::before,
+.ava h3::before,
+.adult h3::before,
+.child h3::before,
+.pick-up h3::before,
+.pick-drop h3::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ccc;
+}
+
+
+
+  @media screen and (max-width: 735px) {
+    .cards-{
+    width: 280px;
+  }
+  }
+
+   @media screen and (max-width: 600px) {
+    .cards-{
+    width: 90%;
+
+  }
+
+  .img-c{
+    height: 280px;
+  }
+  }
+
+
