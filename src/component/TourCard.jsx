@@ -15,6 +15,7 @@ const Card = ({ id, title, image, duration, price , city}) => {
 
   return (
     <div className=" rounded py-4 shadow-md w-[350px] mb-4 cards- ">
+      <Link to={`/details/${id}`}>
       <img src={image} alt={title} className="w-full h-50 object-fill rounded img-c" />
       
       <h2 className="text-lg text-teal-800 font-semibold mt-2 px-2">{title}</h2>
@@ -36,11 +37,9 @@ const Card = ({ id, title, image, duration, price , city}) => {
         <h2 className="   mt-2 flex items-center gap-[10px] text-teal-800 ">AED : {price}</h2>
       </div>
 
-       <Link to={`/details/${id}`}>
       <button className="mt-3 bg-teal-800 text-white px-2 font-medium py-1.5 rounded text-sm">
         View Details
        </button>
-      </Link>
 
 
      
@@ -48,6 +47,7 @@ const Card = ({ id, title, image, duration, price , city}) => {
       </div>
 
 
+      </Link>
     </div>
   );
 };
